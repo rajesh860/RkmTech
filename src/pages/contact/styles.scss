@@ -1,0 +1,65 @@
+.contact-us-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  .contact-us-col {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .contact-us-haeding {
+      width: 80% !important;
+      text-align: center;
+      padding: 13% 0px 7% 0px;
+      margin: 0 auto;
+      h1 {
+        font-size: 2.6rem;
+        margin-bottom: 5px;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+      }
+      p {
+        margin-top: 5px;
+        font-size: 1.1rem;
+        line-height: 1.9;
+        font-weight: 300;
+        opacity: 1;
+      }
+    }
+    .card-col {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 11px;
+      border-radius: 0.75rem;
+      .contact-us-card {
+        height: auto;
+        border-radius: 0.75rem;
+        padding: 2.5rem 2rem;
+        margin-top: 1%;
+        box-shadow: 0 9px 37px rgba(145, 157, 168, 0.16);
+        transition: 0.5s ease-in-out;
+        &:hover {
+          translate: 0px -10px;
+        }
+      }
+    }
+  }
+}
+.icon {
+  svg {
+    font-size: 34px;
+    color: blue;
+  }
+  h3 {
+    color: #0d264c;
+    font-weight: 600;
+  }
+  p {
+    color: rgba(13, 38, 76, 0.7);
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,100 @@
+@keyframes up {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0px);
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(0px);
+  }
+}
+.mySwiper {
+  height: 100vh;
+  position: relative;
+  .overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    top: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .overlay-col {
+      position: absolute;
+      bottom: 50px;
+      width: 40%;
+      height: 250px;
+      animation: up 5s infinite;
+      padding-left: 50px;
+      h1 {
+        font-size: 42px;
+        margin-bottom: 3px;
+      }
+      p {
+        margin-top: 0px;
+        font-size: 18px;
+      }
+    }
+  }
+  .img {
+    height: 100%;
+    width: 100%;
+  }
+}
+.testimonial-container {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(182, 193, 253, 0.5)
+  );
+  .section-3 {
+    margin-top: 5%;
+  }
+  .slider-container {
+    height: auto;
+    .slide {
+      margin: 10px;
+      height: 210px;
+      width: 500px !important;
+      background-color: white;
+      position: relative;
+      box-shadow: 0 9px 30px rgba(7, 65, 210, 0.1);
+      border-radius: 10px;
+      .client-profile {
+        position: absolute;
+        top: 10px;
+        left: -30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        background-size: cover;
+      }
+      .info {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        h5 {
+          margin-bottom: 0px;
+        }
+        h6 {
+          margin-bottom: 0px;
+          margin-top: 5px;
+          color: #2d94f3;
+        }
+        p {
+          font-size: 0.85rem;
+          line-height: 1.7;
+          margin-bottom: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
