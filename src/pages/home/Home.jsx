@@ -5,6 +5,7 @@ import OurClientCard from "../../component/ourClientSection/OurClientCard";
 import OurRangeServices from "../../component/ourRangeServicesSection/OurRangeServices";
 import HomeHeaderSlider from "../../component/slider/HomeHeaderSlider";
 import Testimonial from "../../component/slider/Testimonial";
+// import TechStack from "../techStack";
 
 const Home = () => {
   return (
@@ -13,6 +14,10 @@ const Home = () => {
       <OurClient />
       <OurClientCard />
       <OurRangeServices />
+
+      {/* <section className="our-tech-stack">
+        <TechStack />
+      </section> */}
       <Testimonial />
 
       <GetInTouch />

@@ -1,6 +1,6 @@
 import { Button, Dropdown } from "antd";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../img/logo-light.png";
 import "./styles.scss";
 import {
@@ -10,7 +10,7 @@ import {
   ECommerce,
   WebDeveloment,
 } from "../../icons/Icons";
-import { ContactUs_Screen } from "../../route/Routes";
+import { ContactUs_Screen, Tech_Screen } from "../../route/Routes";
 const HeaderComponent = () => {
   const services = [
     "Web Develoment",
@@ -45,10 +45,11 @@ const HeaderComponent = () => {
             <li>About</li>
             <li>
               <Dropdown
+
                 menu={{
                   items,
                 }}
-                placement="bottomRight"
+                placement="bottom"
               >
                 <li
                   style={{ display: "flex", alignItems: "center", gap: "5px" }}
@@ -57,6 +58,7 @@ const HeaderComponent = () => {
                 </li>
               </Dropdown>
             </li>
+            <li><NavLink to={Tech_Screen}>Tech Stack</NavLink></li>
             <Button>
               <Link to={ContactUs_Screen}>Contact Us</Link>
             </Button>

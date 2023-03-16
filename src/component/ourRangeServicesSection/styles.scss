@@ -19,6 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -27,6 +28,7 @@
     height: auto;
     padding: 20px;
     text-align: center;
+    cursor: pointer;
     transition: 0.5s ease-in-out;
     &:hover {
       box-shadow: 0 9px 30px rgba(7, 65, 210, 0.1);
