@@ -67,11 +67,7 @@ const GetInTouch = () => {
               <label htmlFor="">What You Are Intrested</label>
               <Select
                 defaultValue="Design & Branding"
-                style={{
-                  width: 350,
-                  border: "none",
-                  height: 35,
-                }}
+                className="select"
                 onChange={handleChange}
                 options={option}
               />
@@ -82,11 +78,7 @@ const GetInTouch = () => {
               <label htmlFor="">Project Budget</label>
               <Select
                 defaultValue="Project Budget"
-                style={{
-                  width: 350,
-                  border: "none",
-                  height: 35,
-                }}
+                className="select"
                 onChange={handleChange}
                 options={option2}
               />
@@ -97,15 +89,11 @@ const GetInTouch = () => {
             <textarea
               name=""
               id=""
-              cols="88"
-              rows="10"
+              className="text-area"
               placeholder="Describe Your Require"
             ></textarea>
           </div>
         </div>
-        {/* <div className="top">
-          
-        </div> */}
       </div>
     </>
   );

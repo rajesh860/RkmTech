@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../img/logo-light.png";
+import { sitelogo } from "../../../utils/imports";
 import "./styles.scss";
 const FooterComponent = () => {
   return (
@@ -7,7 +7,7 @@ const FooterComponent = () => {
       <div className="footer-container">
         <div className="footer-col">
           <div className="footer-left-col">
-            <img src={logo} alt="" className="footer-logo" />
+            <img src={sitelogo} alt="" className="footer-logo" />
           </div>
           <div className="footer-right-col">
             <ul>

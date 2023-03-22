@@ -1,9 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper";
-import slide1 from "../../img/slide1.jpg";
-import slide2 from "../../img/slide2.jpg";
-import slide3 from "../../img/slide3.jpg";
-import slide4 from "../../img/slide4.jpg";
+import { slide1, slide2, slide3, slide4 } from "../../utils/imports";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css";

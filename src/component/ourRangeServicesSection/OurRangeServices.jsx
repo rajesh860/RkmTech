@@ -1,5 +1,5 @@
-import { Button } from "antd";
 import React from "react";
+import ButtonComponent from "../button/Button";
 import SevicessCard from "./SevicessCard";
 import "./styles.scss";
 const OurRangeServices = () => {
@@ -20,7 +20,7 @@ const OurRangeServices = () => {
         </div>
       </div>
       <div className="view-more-btn">
-        <Button>View Detail</Button>
+        <ButtonComponent btn="View Detail" />
       </div>
     </>
   );

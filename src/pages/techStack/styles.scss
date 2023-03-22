@@ -1,32 +1,8 @@
-.our-tech-stack {
-  .stack-content {
-    padding: 20px 0;
-  }
-  .stack-intro {
-    .header-title {
-      line-height: 1.6;
-      font-weight: 600;
-      margin-bottom: 0;
-      letter-spacing: 0.05rem;
-      font-size: 1.65rem;
-      color: #2d94f3;
-    }
-
-    p {
-      max-width: 60%;
-      font-weight: 500;
-      opacity: 0.71;
-      color: #0d264c;
-      font-size: 1.2rem;
-    }
-  }
-}
-
 // stack-wrapper
 
 .stack-wrapper {
   margin-top: 20px;
-  gap: 30px;
+  gap: 70px;
   .holder {
     .title-holder {
       display: flex;
@@ -45,6 +21,7 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    margin-top: 30px;
     justify-content: flex-start;
 
     .list-item {
@@ -59,6 +36,65 @@
         opacity: 0.7;
         font-weight: 500;
       }
+    }
+  }
+}
+
+// we-development
+
+.web-development {
+  padding: 50px 0;
+  position: relative;
+}
+// app-development
+
+.app-development {
+  padding: 50px 0;
+  background-color: white;
+}
+
+// ui-ux-design
+
+.ui-ux-design {
+  padding: 50px 0;
+}
+
+// .devops-services
+.devops-services {
+  padding: 50px 0;
+  background-color: white;
+}
+
+// qa-testing
+
+.qa-testing {
+  padding: 50px 0;
+}
+
+// data-engineering
+
+.data-engineering {
+  padding: 50px 0;
+  background-color: white;
+}
+
+// portfolio-&-contact
+.portfolio__contact {
+  padding: 50px 0;
+  .holder-item {
+    .title {
+      line-height: 1.6;
+      font-weight: 600;
+      margin-bottom: 0;
+      letter-spacing: 0.05rem;
+      font-size: 1.65rem;
+      color: #2d94f3;
+    }
+    .desc {
+      max-width: 60%;
+      opacity: 0.71;
+      color: #0d264c;
+      font-size: 1.2rem;
     }
   }
 }

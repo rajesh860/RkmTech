@@ -15,7 +15,7 @@ const SevicessCard = () => {
     content,
     Ui,
   ];
-  const lottify = option.map((res) => {
+  const lottify = option?.map((res) => {
     return {
       loop: true,
       autoplay: true,
@@ -43,7 +43,7 @@ const SevicessCard = () => {
   ];
   return (
     <>
-      {lottify.map((res, index) => {
+      {lottify?.map((res, index) => {
         return (
           <div className="card">
             <Lottie options={res} height={150} width={150} />

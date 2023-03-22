@@ -59,18 +59,4 @@
   margin-top: 30px;
   display: flex;
   justify-content: center;
-  button {
-    background-color: #2d94f3;
-    border-color: #2d94f3;
-    color: white;
-    transition: 0.5s ease-in-out;
-    font-size: 18px;
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    &:hover {
-      background-color: white;
-      color: white;
-    }
-  }
 }

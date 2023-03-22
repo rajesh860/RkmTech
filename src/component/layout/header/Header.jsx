@@ -1,16 +1,24 @@
 import { Button, Dropdown } from "antd";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../img/logo-light.png";
-import "./styles.scss";
 import {
-  AppDeveloment,
-  Arrow,
-  DigitalMarketing,
-  ECommerce,
-  WebDeveloment,
-} from "../../icons/Icons";
-import { ContactUs_Screen, Tech_Screen } from "../../route/Routes";
+  MdKeyboardArrowDown,
+  MdOutlineSell,
+  MdOutlineWebAsset,
+} from "react-icons/md";
+import { SiGooglemarketingplatform } from "react-icons/si";
+import { GrAppleAppStore } from "react-icons/gr";
+import { sitelogo } from "../../../utils/imports";
+import "./styles.scss";
+
+import {
+  AboutUs_Screen,
+  Blog_Screen,
+  ContactUs_Screen,
+  Home_Screen,
+  Tech_Screen,
+} from "../../../route/Routes";
+
 const HeaderComponent = () => {
   const services = [
     "Web Develoment",
@@ -19,10 +27,10 @@ const HeaderComponent = () => {
     "E-Commerce",
   ];
   const servicesIcon = [
-    <WebDeveloment />,
-    <AppDeveloment />,
-    <DigitalMarketing />,
-    <ECommerce />,
+    <MdOutlineWebAsset />,
+    <GrAppleAppStore />,
+    <SiGooglemarketingplatform />,
+    <MdOutlineSell />,
   ];
   const items = services.map((res, index) => {
     return {
@@ -37,15 +45,18 @@ const HeaderComponent = () => {
     <>
       <div className="header-container">
         <div className="logo-col">
-          <img src={logo} alt="" />
+          <img src={sitelogo} alt="" />
         </div>
         <div className="menu-col">
           <ul>
-            <li>Home</li>
-            <li>About</li>
+            <li>
+              <NavLink to={Home_Screen}>Home</NavLink>
+            </li>
+            <li>
+              <NavLink to={AboutUs_Screen}>About</NavLink>
+            </li>
             <li>
               <Dropdown
-
                 menu={{
                   items,
                 }}
@@ -54,11 +65,17 @@ const HeaderComponent = () => {
                 <li
                   style={{ display: "flex", alignItems: "center", gap: "5px" }}
                 >
-                  Services <Arrow />
+                  Services
+                  <MdKeyboardArrowDown />
                 </li>
               </Dropdown>
             </li>
-            <li><NavLink to={Tech_Screen}>Tech Stack</NavLink></li>
+            <li>
+              <NavLink to={Tech_Screen}>Tech Stack</NavLink>
+            </li>
+            <li>
+              <NavLink to={Blog_Screen}>Blog</NavLink>
+            </li>
             <Button>
               <Link to={ContactUs_Screen}>Contact Us</Link>
             </Button>

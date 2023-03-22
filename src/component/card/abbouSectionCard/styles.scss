@@ -1,0 +1,73 @@
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+.container-card {
+  display: flex;
+  height: 150px;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 40px 0px 10px;
+  .card-left-col {
+    svg {
+      font-size: 44px;
+      color: #9898f0;
+    }
+  }
+}
+
+.count-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 193px;
+  width: 306px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    animation: rubberBand 1s linear;
+  }
+  h3 {
+    margin-bottom: 0px;
+    font-size: 34px;
+  }
+  p {
+    margin-top: 0px;
+    font-size: 22px;
+  }
+}

@@ -1,14 +1,13 @@
 import React from "react";
 import ContactUsCard from "./ContactUsCard";
-import Mail from "../../img/mail.svg";
-import Whtsapp from "../../img/whtsapp.svg";
-import address from "../../img/address.svg";
+import { mail, whtsapp, addres } from "../../utils/imports";
+
 import "./styles.scss";
 import GetInTouch from "../../component/getInTouchForm/GetInTouch";
 const ContactUs = () => {
-  const img = [Mail, Whtsapp, address];
+  const img = [mail, whtsapp, addres];
   const width = ["48.8%", "48.8%", "100%"];
-  const mail = [
+  const mailData = [
     "hi@rkmtech.com",
     "India:(+91) 86786786678",
     "Plot No. 115, Sector 44, Gurgaon, Haryana - 122002",
@@ -38,7 +37,7 @@ const ContactUs = () => {
                 <ContactUsCard
                   width={width[index]}
                   img={img[index]}
-                  mail={mail[index]}
+                  mail={mailData[index]}
                   para={res}
                   location={locationLink[index]}
                 />

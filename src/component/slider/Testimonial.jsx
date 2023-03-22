@@ -1,11 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper";
-import slide1 from "../../img/slide1.jpg";
-import slide2 from "../../img/slide2.jpg";
-import slide3 from "../../img/slide3.jpg";
-import slide4 from "../../img/slide4.jpg";
-const Testimonial = () => {
+import { slide1, slide2, slide3, slide4 } from "../../utils/imports";
+
+const Testimonial = ({ heading }) => {
   const image = [
     slide1,
     slide2,
@@ -36,7 +34,7 @@ const Testimonial = () => {
       <div className="testimonial-container">
         <div className="our-client-heading section-3">
           <div className="heading-col">
-            <h1> Real words by real people</h1>
+            <h1>{heading}</h1>
             <p>
               It's great to get a pat on your back for a job well done. See what
               our clients have to say about us.

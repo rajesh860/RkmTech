@@ -18,7 +18,7 @@ const Home = () => {
       {/* <section className="our-tech-stack">
         <TechStack />
       </section> */}
-      <Testimonial />
+      <Testimonial heading="Real words by real people" />
 
       <GetInTouch />
     </div>
