@@ -12,7 +12,7 @@ const Mainlayout = () => {
           background: "transparent",
           position: "fixed",
           top: "0px",
-          zIndex: "10",
+          zIndex: "29990",
           padding: "0",
           margin: "0",
         }}

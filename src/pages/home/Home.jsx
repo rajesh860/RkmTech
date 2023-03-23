@@ -20,7 +20,7 @@ const Home = () => {
       </section> */}
       <Testimonial heading="Real words by real people" />
 
-      <GetInTouch />
+      {/* <GetInTouch /> */}
     </div>
   );
 };

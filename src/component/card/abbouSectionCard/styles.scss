@@ -41,6 +41,11 @@
   align-items: center;
   gap: 20px;
   padding: 0px 40px 0px 10px;
+  @media (max-width: 480px) {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+  }
   .card-left-col {
     svg {
       font-size: 44px;
@@ -58,6 +63,11 @@
   width: 306px;
   border-radius: 10px;
   transition: 0.5s ease-in-out;
+  @media (max-width: 480px) {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+  }
   cursor: pointer;
   &:hover {
     animation: rubberBand 1s linear;

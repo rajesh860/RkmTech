@@ -10,16 +10,17 @@ const HomeHeaderSlider = () => {
   const image = [slide1, slide2, slide3, slide4];
   const data = ["exercitationem", "veritatis", "sapiente", "voluptate"];
   const para = [
-    "Lorem ipsum dolor sit amet consectetur adipisicing",
-    "jkfkj",
-    "Accusantium distinctio veniam eius",
-    " numquam adipisci reprehenderit quo neque maxime, dolorum tempore",
+    "ipsam qui ullam illo accusantium, exercitationem maxime rerum veritatis alias",
+    "ipsam qui ullam illo accusantium, exercitationem maxime rerum veritatis alias",
+    "ipsam qui ullam illo accusantium, exercitationem maxime rerum veritatis alias",
+    "ipsam qui ullam illo accusantium, exercitationem maxime rerum veritatis alias",
     "ipsam qui ullam illo accusantium, exercitationem maxime rerum veritatis alias",
     "alias magnam, quis voluptate laboriosam quisquam in natus sapiente velit dicta soluta cumque! Iste, cum natus? Distinctio, nam!",
   ];
   return (
     <>
       <Swiper
+        autoHeight
         // navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"

@@ -1,5 +1,5 @@
 import { Button, Dropdown } from "antd";
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import {
   MdKeyboardArrowDown,
@@ -9,6 +9,7 @@ import {
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { GrAppleAppStore } from "react-icons/gr";
 import { sitelogo } from "../../../utils/imports";
+import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import "./styles.scss";
 
 import {
@@ -18,6 +19,7 @@ import {
   Home_Screen,
   Tech_Screen,
 } from "../../../route/Routes";
+import Sider from "../sider/Sider";
 
 const HeaderComponent = () => {
   const services = [
@@ -32,6 +34,7 @@ const HeaderComponent = () => {
     <SiGooglemarketingplatform />,
     <MdOutlineSell />,
   ];
+
   const items = services.map((res, index) => {
     return {
       key: index + 1,
@@ -40,12 +43,28 @@ const HeaderComponent = () => {
       icon: servicesIcon[index],
     };
   });
+  const [open, setOpen] = useState(false);
+  const showDrawer = () => {
+    setOpen((o) => !o);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
 
   return (
     <>
-      <div className="header-container">
+      <Sider open={open} onClose={onClose} />
+      <div
+        className="header-container"
+        style={{ background: open ? "black" : "" }}
+      >
         <div className="logo-col">
           <img src={sitelogo} alt="" />
+        </div>
+        <div className="hamburger">
+          <Button type="ghost" onClick={showDrawer}>
+            {open ? <RxCross2 /> : <RxHamburgerMenu />}
+          </Button>
         </div>
         <div className="menu-col">
           <ul>

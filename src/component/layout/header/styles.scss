@@ -1,3 +1,8 @@
+$breakpoint-tablet: 870px;
+$breakpoint-mobile: 600px;
+$breakpoint-specific: 1218px;
+$breakpoint-custom: 700px;
+
 .header-container {
   width: 100vw;
   height: 64px;
@@ -7,6 +12,11 @@
   align-items: center;
   padding-left: 10px;
   padding-right: 40px;
+  @media (max-width: 480px) {
+    padding-left: 0px;
+    padding-right: 10px;
+    justify-content: space-between;
+  }
   .logo-col {
     width: 220px;
     height: 100%;
@@ -14,12 +24,16 @@
     padding: 10px;
     display: flex;
     align-items: center;
+
     img {
       width: 100%;
       height: auto;
     }
   }
   .menu-col {
+    @media (max-width: 480px) {
+      display: none;
+    }
     ul {
       display: flex;
       gap: 30px;
@@ -68,6 +82,17 @@
           }
         }
       }
+    }
+  }
+  .hamburger {
+    display: none;
+    @media (max-width: 480px) {
+      display: block;
+    }
+
+    svg {
+      font-size: 22px;
+      color: white;
     }
   }
 }

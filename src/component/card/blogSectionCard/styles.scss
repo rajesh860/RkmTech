@@ -3,6 +3,10 @@
   height: 512px;
   border-radius: 5px;
   overflow: hidden;
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 400px;
+  }
   .img-col-top {
     width: 100%;
     height: 50%;
@@ -15,6 +19,12 @@
     }
     // padding: 20px;
   }
+  p {
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+
   Button {
     border: none;
     background-color: #2d94f3;
